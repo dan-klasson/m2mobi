@@ -14,12 +14,14 @@ This form assignment was written with Symfony2.1. It is safe from Sql-injection 
 
 
 ```
-    sudo setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs
-    sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs
+sudo setfacl -R -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs
+sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs
 ```
 
 * Edit your web server config file so that point to `/path/to/project-foder/web` (on Apache it's `DocumentRoot`).
 * Open up `http://localhost/app_dev.php/` in your browder.
+
+[Symfony2 Install manual](http://symfony.com/doc/current/book/installation.html)
 
 ## The files that are of interest are:
 * `src/M2mobi/UserBundle/Controller/DefaultController.php`
