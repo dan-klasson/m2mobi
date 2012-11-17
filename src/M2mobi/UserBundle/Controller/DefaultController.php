@@ -21,7 +21,7 @@ class DefaultController extends Controller
 
     /**
      * @Route("/signup")
-     * @Template("UserBundle:Default:signup.html.twig")
+     * @Template("M2mobiUserBundle:Default:signup.html.twig")
      */
     public function signupAction(Request $request)
     {
