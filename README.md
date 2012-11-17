@@ -19,9 +19,9 @@ sudo setfacl -dR -m u:www-data:rwx -m u:`whoami`:rwx app/cache app/logs
 ```
 
 * Edit your web server config file so that point to `/path/to/project-foder/web` (on Apache it's `DocumentRoot`).
-* Open up `http://localhost/app_dev.php/` in your browder.
+* Open up `http://localhost/app_dev.php/` in your browser.
 
-[Symfony2 Install manual](http://symfony.com/doc/current/book/installation.html)
+For more information see the [Symfony2 Install manual](http://symfony.com/doc/current/book/installation.html).
 
 ## The files that are of interest are:
 * `src/M2mobi/UserBundle/Controller/DefaultController.php`
