@@ -1,0 +1,18 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+
+<style>
+select {
+    width: 100px;
+}
+</style>
+
+<fieldset>
+    <form action="{{ path('signup') }}" method="post" {{ form_enctype(form) }} class="well">
+        {{ form_widget(form) }}
+
+        <input type="submit" value="Sign Up!" class="well">
+    </form>
+</fieldset>
+{% endblock %}

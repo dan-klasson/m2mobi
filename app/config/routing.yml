@@ -1,0 +1,16 @@
+m2mobi_user:
+    resource: "@M2mobiUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+index:
+    pattern:  /
+    defaults: { _controller: AcmeUserBundle:Default:index }
+
+signup:
+    pattern:  /signup
+    defaults: { _controller: AcmeUserBundle:Default:signup }
+
+welcome:
+    pattern:  /welcome
+    defaults: { _controller: AcmeUserBundle:Default:welcome }
